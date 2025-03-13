@@ -502,6 +502,7 @@ static void generate_info_set(MppBufSlotsImpl *impl, MppFrame frame, RK_U32 forc
     info_set_impl->colorspace       = frame_impl->colorspace;
     info_set_impl->chroma_location  = frame_impl->chroma_location;
 
+#if 0
     if (impl->align_chk_log_en) {
         impl->align_chk_log_en = 0;
         if (legacy_info_set.h_stride_by_pixel != sys_cfg_info_set.h_stride_by_pixel)
@@ -521,6 +522,7 @@ static void generate_info_set(MppBufSlotsImpl *impl, MppFrame frame, RK_U32 forc
                      legacy_info_set.size_total,
                      sys_cfg_info_set.size_total);
     }
+#endif
 }
 
 #define dump_slots(...) _dump_slots(__FUNCTION__, ## __VA_ARGS__)
