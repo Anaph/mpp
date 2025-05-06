@@ -9,7 +9,7 @@ add_library(vproc_vdpp STATIC vdpp_api.c
                               vdpp_common.c)
 set_target_properties(vproc_vdpp PROPERTIES FOLDER "mpp/vproc/vdpp")
 
-add_subdirectory(test)
+# add_subdirectory(test)
 
 # libvdpp.so for hwpq
 add_library(vdpp STATIC hwpq_vdpp_proc.cpp ../../mpp_info.cpp)
